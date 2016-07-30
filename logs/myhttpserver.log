@@ -1,0 +1,1106 @@
+[20160730 11:43:07.968] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 11:43:07.978] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 11:43:07.983] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 11:43:07.996] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 11:43:07.998] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 11:43:07.998] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 11:43:07.998] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 11:43:07.999] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 11:43:07.999] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 11:43:07.999] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 11:43:08.000] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 11:43:08.000] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 11:43:08.003] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 11:43:08.003] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 11:43:08.003] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 11:43:08.004] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 11:43:08.005] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 11:43:08.020] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 11:43:08.020] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 11:43:08.120] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x4826b2b207d7f7f6 (took 9 ms)
+[20160730 11:43:08.140] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 11:43:08.140] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 11:43:08.203] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 11:43:08.204] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 11:43:08.222] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e] REGISTERED
+[20160730 11:43:08.226] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 11:43:08.228] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 11:46:29.089] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x6571792d, /192.168.1.104:51124 => /192.168.1.104:8090]
+[20160730 11:46:29.130] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 11:46:29.144] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 11:46:29.155] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 11:46:29.163] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/a=shit
+[20160730 11:46:29.163] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:67][channelRead0] clientIp: 192.168.1.104
+[20160730 11:46:29.163] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:68][channelRead0] query params: null
+[20160730 11:46:29.164] [WARN] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 11:46:29.173] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 11:46:29.173] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 11:46:29.222] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":1,"msg":"parameter is empty"}
+[20160730 11:47:27.068] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x83d25a1e, /192.168.1.104:51133 => /192.168.1.104:8090]
+[20160730 11:47:27.114] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/a=shit
+[20160730 11:47:27.115] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:67][channelRead0] clientIp: 192.168.1.104
+[20160730 11:47:27.116] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:68][channelRead0] query params: null
+[20160730 11:47:27.116] [WARN] [nioEventLoopGroup-3-2] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 11:47:27.118] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":1,"msg":"parameter is empty"}
+[20160730 11:47:49.347] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x5a77a974, /127.0.0.1:51138 => /127.0.0.1:8090]
+[20160730 11:47:49.350] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xc2f2459d, /127.0.0.1:51139 => /127.0.0.1:8090]
+[20160730 11:47:49.362] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/a=shit
+[20160730 11:47:49.363] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 11:47:49.363] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:68][channelRead0] query params: null
+[20160730 11:47:49.363] [WARN] [nioEventLoopGroup-3-3] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 11:47:49.365] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":1,"msg":"parameter is empty"}
+[20160730 11:47:49.389] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:66][channelRead0] request uri: /favicon.ico
+[20160730 11:47:49.389] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 11:47:49.389] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:68][channelRead0] query params: null
+[20160730 11:47:49.389] [WARN] [nioEventLoopGroup-3-4] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 11:47:49.390] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":1,"msg":"parameter is empty"}
+[20160730 15:57:30.553] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x820f668e, /127.0.0.1:51278 => /127.0.0.1:8090]
+[20160730 15:57:30.562] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x04ebb130, /127.0.0.1:51279 => /127.0.0.1:8090]
+[20160730 15:57:30.565] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x35d4a676, /127.0.0.1:51280 => /127.0.0.1:8090]
+[20160730 15:57:30.569] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xe341c7cb, /127.0.0.1:51281 => /127.0.0.1:8090]
+[20160730 15:57:30.578] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/
+[20160730 15:57:30.578] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 15:57:30.578] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 15:57:30.579] [WARN] [nioEventLoopGroup-3-5] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 15:57:30.581] [WARN] [nioEventLoopGroup-3-5] [HttpRouter.java:27][route] unkown uri: /wx/auth/
+[20160730 15:57:30.581] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:141][process] uri:/wx/auth/, spend:0ms
+[20160730 15:57:30.582] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 15:57:58.574] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x097d13f7, /127.0.0.1:51285 => /127.0.0.1:8090]
+[20160730 15:57:58.579] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xbc8b0ab5, /127.0.0.1:51286 => /127.0.0.1:8090]
+[20160730 15:57:58.582] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x0f440284, /127.0.0.1:51287 => /127.0.0.1:8090]
+[20160730 15:57:58.596] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/
+[20160730 15:57:58.597] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 15:57:58.598] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 15:57:58.598] [WARN] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 15:57:58.600] [WARN] [nioEventLoopGroup-3-1] [HttpRouter.java:27][route] unkown uri: /wx/auth/
+[20160730 15:57:58.600] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:141][process] uri:/wx/auth/, spend:0ms
+[20160730 15:57:58.600] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 15:57:59.326] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x7bbe9b7e, /127.0.0.1:51288 => /127.0.0.1:8090]
+[20160730 15:57:59.338] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/
+[20160730 15:57:59.339] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 15:57:59.339] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 15:57:59.340] [WARN] [nioEventLoopGroup-3-2] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 15:57:59.343] [WARN] [nioEventLoopGroup-3-2] [HttpRouter.java:27][route] unkown uri: /wx/auth/
+[20160730 15:57:59.344] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:141][process] uri:/wx/auth/, spend:1ms
+[20160730 15:57:59.344] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 15:57:59.953] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/
+[20160730 15:57:59.954] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 15:57:59.954] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 15:57:59.955] [WARN] [nioEventLoopGroup-3-3] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 15:57:59.957] [WARN] [nioEventLoopGroup-3-3] [HttpRouter.java:27][route] unkown uri: /wx/auth/
+[20160730 15:57:59.958] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:141][process] uri:/wx/auth/, spend:1ms
+[20160730 15:57:59.958] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 15:59:08.768] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xe7014b44, /127.0.0.1:51297 => /127.0.0.1:8090]
+[20160730 15:59:08.776] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth/
+[20160730 15:59:08.777] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 15:59:08.777] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 15:59:08.778] [WARN] [nioEventLoopGroup-3-5] [HttpServerHandler.java:190][sendError] sendError: 404 Not Found
+[20160730 15:59:08.781] [WARN] [nioEventLoopGroup-3-5] [HttpRouter.java:27][route] unkown uri: /wx/auth/
+[20160730 15:59:08.781] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:141][process] uri:/wx/auth/, spend:0ms
+[20160730 15:59:08.782] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 16:00:26.975] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xa4b7b130, /127.0.0.1:51306 => /127.0.0.1:8090]
+[20160730 16:00:26.984] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth
+[20160730 16:00:26.984] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:67][channelRead0] clientIp: 127.0.0.1
+[20160730 16:00:26.985] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 16:00:26.986] [INFO] [nioEventLoopGroup-3-6] [WXServerAuthHandler.java:18][handle] request: a=shit
+[20160730 16:00:26.986] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:141][process] uri:/wx/auth, spend:1ms
+[20160730 16:00:26.987] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 16:00:55.738] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x86286771, /192.168.1.104:51317 => /192.168.1.104:8090]
+[20160730 16:00:55.806] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth
+[20160730 16:00:55.807] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:67][channelRead0] clientIp: 192.168.1.104
+[20160730 16:00:55.807] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:68][channelRead0] query params: a=shit
+[20160730 16:00:55.808] [INFO] [nioEventLoopGroup-3-7] [WXServerAuthHandler.java:18][handle] request: a=shit
+[20160730 16:00:55.808] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:141][process] uri:/wx/auth, spend:0ms
+[20160730 16:00:55.809] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 16:13:56.942] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x6bf05a1e, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x425eacc4, /192.168.1.104:51555 => /192.168.1.104:8090]
+[20160730 16:13:57.010] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:66][channelRead0] request uri: /wx/auth
+[20160730 16:13:57.011] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:67][channelRead0] clientIp: 192.168.1.104
+[20160730 16:13:57.011] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:68][channelRead0] query params: signature=40d4712d2c609b556a4a69b8efe540d6a90864dd&echostr=1732732891357347295&timestamp=1469866453&nonce=347967907
+[20160730 16:13:57.012] [INFO] [nioEventLoopGroup-3-8] [WXServerAuthHandler.java:18][handle] request: signature=40d4712d2c609b556a4a69b8efe540d6a90864dd&echostr=1732732891357347295&timestamp=1469866453&nonce=347967907
+[20160730 16:13:57.012] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:141][process] uri:/wx/auth, spend:0ms
+[20160730 16:13:57.013] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:147][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:23:03.516] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:23:03.533] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:23:03.536] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:23:03.604] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:23:03.607] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:23:03.608] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:23:03.608] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:23:03.609] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:23:03.614] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:23:03.614] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:23:03.615] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:23:03.621] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:23:03.625] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:23:03.625] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:23:03.625] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:23:03.626] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:23:03.628] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:23:03.655] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:23:03.655] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:23:03.768] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x038bcb955cb57e5a (took 9 ms)
+[20160730 17:23:03.797] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:23:03.797] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:23:03.859] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:23:03.860] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:23:03.869] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2c1a1f90] REGISTERED
+[20160730 17:23:03.872] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2c1a1f90] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:23:03.873] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2c1a1f90, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:23:11.045] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2c1a1f90, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x35fe91f4, /127.0.0.1:52841 => /127.0.0.1:8090]
+[20160730 17:23:11.077] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:23:11.090] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:23:11.131] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:23:11.137] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 17:23:11.137] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:23:11.137] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:23:11.143] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:18][handle] request: a=shit
+[20160730 17:23:11.143] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth, spend:0ms
+[20160730 17:23:11.209] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:23:11.216] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:23:11.216] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:23:12.933] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 17:23:12.934] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:23:12.935] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:23:12.936] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:18][handle] request: a=shit
+[20160730 17:23:12.937] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth, spend:1ms
+[20160730 17:23:12.938] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:35:50.634] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:35:50.644] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:35:50.649] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:35:50.661] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:35:50.664] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:35:50.664] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:35:50.665] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:35:50.665] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:35:50.665] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:35:50.666] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:35:50.666] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:35:50.666] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:35:50.669] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:35:50.669] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:35:50.669] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:35:50.670] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:35:50.671] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:35:50.687] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:35:50.687] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:35:50.781] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x07b4bbfe99bf5400 (took 10 ms)
+[20160730 17:35:50.802] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:35:50.803] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:35:50.883] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:35:50.883] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:35:50.900] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xfd6fe416] REGISTERED
+[20160730 17:35:50.902] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xfd6fe416] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:35:50.904] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xfd6fe416, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:35:56.025] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xfd6fe416, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x28c25736, /127.0.0.1:53017 => /127.0.0.1:8090]
+[20160730 17:35:56.069] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:35:56.082] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:35:56.093] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:35:56.099] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 17:35:56.099] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:35:56.099] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:35:56.105] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 17:35:56.105] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth, spend:0ms
+[20160730 17:35:56.144] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:35:56.150] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:35:56.150] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:36:29.841] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:36:29.851] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:36:29.857] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:36:29.869] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:36:29.871] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:36:29.872] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:36:29.872] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:36:29.873] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:36:29.873] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:36:29.873] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:36:29.873] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:36:29.874] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:36:29.876] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:36:29.876] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:36:29.877] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:36:29.877] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:36:29.878] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:36:29.895] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:36:29.896] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:36:29.994] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x165542bd456a5819 (took 10 ms)
+[20160730 17:36:30.017] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:36:30.017] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:36:30.074] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:36:30.075] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:36:30.085] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x1d21e432] REGISTERED
+[20160730 17:36:30.086] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x1d21e432] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:36:30.088] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x1d21e432, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:36:48.165] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x1d21e432, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x325d03aa, /127.0.0.1:53047 => /127.0.0.1:8090]
+[20160730 17:36:48.205] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:36:48.232] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:36:48.243] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:36:48.249] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 17:36:48.249] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:36:48.249] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:36:48.251] [WARN] [nioEventLoopGroup-3-1] [HttpServerHandler.java:239][sendError] sendError: 404 Not Found
+[20160730 17:36:48.257] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:36:48.258] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:36:48.277] [WARN] [nioEventLoopGroup-3-1] [HttpRouter.java:27][route] unkown uri: /wx/auth/pt
+[20160730 17:36:48.277] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:0ms
+[20160730 17:36:48.315] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":3,"msg":"unkown uri"}
+[20160730 17:37:36.007] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:37:36.018] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:37:36.023] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:37:36.031] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:37:36.033] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:37:36.033] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:37:36.034] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:37:36.034] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:37:36.035] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:37:36.035] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:37:36.035] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:37:36.035] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:37:36.038] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:37:36.038] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:37:36.038] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:37:36.039] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:37:36.040] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:37:36.056] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:37:36.056] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:37:36.163] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0xf0b1627970930758 (took 10 ms)
+[20160730 17:37:36.184] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:37:36.184] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:37:36.243] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:37:36.244] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:37:36.254] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf4d7db47] REGISTERED
+[20160730 17:37:36.256] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf4d7db47] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:37:36.257] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf4d7db47, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:37:40.211] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf4d7db47, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xb3f5045b, /127.0.0.1:53079 => /127.0.0.1:8090]
+[20160730 17:37:40.244] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:37:40.254] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:37:40.265] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:37:40.271] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 17:37:40.271] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:37:40.271] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:37:40.277] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 17:37:40.278] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 17:37:40.323] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:37:40.330] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:37:40.330] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:38:39.232] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:38:39.246] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:38:39.251] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:38:39.261] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:38:39.263] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:38:39.263] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:38:39.264] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:38:39.264] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:38:39.264] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:38:39.265] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:38:39.265] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:38:39.265] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:38:39.268] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:38:39.268] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:38:39.269] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:38:39.269] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:38:39.271] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:38:39.293] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:38:39.293] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:38:39.419] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0xa09cfd92ce543570 (took 11 ms)
+[20160730 17:38:39.442] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:38:39.443] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:38:39.501] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:38:39.501] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:38:39.512] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xbf1b93f5] REGISTERED
+[20160730 17:38:39.514] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xbf1b93f5] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:38:39.516] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xbf1b93f5, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:38:45.073] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xbf1b93f5, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x0bbb7b3d, /127.0.0.1:53115 => /127.0.0.1:8090]
+[20160730 17:38:45.111] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:38:45.134] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:38:45.144] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:39:04.127] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 17:39:04.506] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:39:04.910] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:39:12.573] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 17:39:12.574] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 17:39:12.649] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:39:12.659] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:39:12.659] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:40:49.376] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 17:40:49.387] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 17:40:49.392] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 17:40:49.404] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 17:40:49.406] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 17:40:49.406] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 17:40:49.407] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 17:40:49.407] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 17:40:49.408] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 17:40:49.408] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 17:40:49.408] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 17:40:49.409] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 17:40:49.411] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 17:40:49.412] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 17:40:49.412] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 17:40:49.413] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 17:40:49.414] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 17:40:49.429] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 17:40:49.429] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 17:40:49.531] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0xa74343985b71e9e2 (took 10 ms)
+[20160730 17:40:49.553] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 17:40:49.554] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 17:40:49.608] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 17:40:49.608] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 17:40:49.618] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xb94d8f04] REGISTERED
+[20160730 17:40:49.620] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xb94d8f04] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 17:40:49.622] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xb94d8f04, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 17:40:53.969] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xb94d8f04, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x60c863d3, /127.0.0.1:53161 => /127.0.0.1:8090]
+[20160730 17:40:54.002] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 17:40:54.014] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 17:40:54.023] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 17:40:54.029] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 17:40:54.029] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:40:54.029] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:40:54.035] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 17:40:54.036] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 17:40:54.079] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 17:40:54.085] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 17:40:54.085] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 17:40:55.065] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 17:40:55.066] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 17:40:55.066] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 17:40:55.067] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 17:40:55.068] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 17:40:55.069] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:09:17.049] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:09:17.108] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:09:17.115] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:09:17.135] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:09:17.139] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:09:17.139] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:09:17.140] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:09:17.140] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:09:17.141] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:09:17.141] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:09:17.141] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:09:17.141] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:09:17.144] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:09:17.144] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:09:17.145] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:09:17.145] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:09:17.146] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:09:17.163] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:09:17.164] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:09:17.269] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x718dc83fe96f3924 (took 10 ms)
+[20160730 21:09:17.290] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:09:17.290] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:09:17.367] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:09:17.367] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:09:17.378] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc69898b8] REGISTERED
+[20160730 21:09:17.379] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc69898b8] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:09:17.381] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc69898b8, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:09:27.197] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc69898b8, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xf75eaf3f, /127.0.0.1:54241 => /127.0.0.1:8090]
+[20160730 21:09:27.201] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc69898b8, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xae077da6, /127.0.0.1:54242 => /127.0.0.1:8090]
+[20160730 21:09:27.263] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:09:27.290] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:09:27.317] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:09:27.351] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:09:27.351] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:09:27.351] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:09:27.390] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:09:27.390] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:0ms
+[20160730 21:09:27.569] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:09:27.575] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:09:27.575] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:09:28.780] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:09:28.781] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:09:28.781] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:09:28.782] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:09:28.783] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 21:09:28.784] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:10:29.136] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:10:29.148] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:10:29.153] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:10:29.165] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:10:29.167] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:10:29.167] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:10:29.168] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:10:29.168] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:10:29.168] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:10:29.169] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:10:29.169] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:10:29.169] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:10:29.172] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:10:29.172] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:10:29.172] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:10:29.173] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:10:29.174] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:10:29.190] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:10:29.191] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:10:29.290] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0xd4d69b76afd87919 (took 11 ms)
+[20160730 21:10:29.313] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:10:29.313] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:10:29.393] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:10:29.394] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:10:29.404] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x9ea9ae35] REGISTERED
+[20160730 21:10:29.407] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x9ea9ae35] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:10:29.408] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x9ea9ae35, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:10:34.240] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x9ea9ae35, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xd1ac3d3c, /127.0.0.1:54278 => /127.0.0.1:8090]
+[20160730 21:10:34.243] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x9ea9ae35, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x69806237, /127.0.0.1:54279 => /127.0.0.1:8090]
+[20160730 21:10:34.294] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:10:34.308] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:10:34.318] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:10:34.324] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:10:34.324] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:10:34.325] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:10:34.331] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:10:34.331] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:0ms
+[20160730 21:10:34.376] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:10:34.383] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:10:34.383] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:10:35.110] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:10:35.110] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:10:35.111] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:10:35.112] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:10:35.112] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:0ms
+[20160730 21:10:35.113] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:12:39.607] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:12:39.618] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:12:39.622] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:12:39.634] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:12:39.636] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:12:39.637] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:12:39.637] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:12:39.638] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:12:39.638] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:12:39.638] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:12:39.638] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:12:39.639] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:12:39.641] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:12:39.642] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:12:39.642] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:12:39.643] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:12:39.644] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:12:39.660] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:12:39.660] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:12:39.755] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x283b85057cb4b39f (took 9 ms)
+[20160730 21:12:39.776] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:12:39.776] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:12:39.833] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:12:39.834] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:12:39.843] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x69de5a68] REGISTERED
+[20160730 21:12:39.845] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x69de5a68] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:12:39.847] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x69de5a68, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:12:45.285] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x69de5a68, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x56b55476, /127.0.0.1:54339 => /127.0.0.1:8090]
+[20160730 21:12:45.288] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x69de5a68, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x87958d11, /127.0.0.1:54340 => /127.0.0.1:8090]
+[20160730 21:12:45.330] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:12:45.346] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:12:45.355] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:12:45.361] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:12:45.361] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:12:45.361] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:12:45.362] [DEBUG] [nioEventLoopGroup-3-1] [HttpServerHandler.java:115][channelRead0] jerry 000:JSON
+[20160730 21:12:45.368] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:12:45.368] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:191][process] uri:/wx/auth/pt, spend:0ms
+[20160730 21:12:45.411] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:197][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:12:45.418] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:12:45.418] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:15:26.649] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:15:26.660] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:15:26.665] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:15:26.677] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:15:26.680] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:15:26.680] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:15:26.681] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:15:26.681] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:15:26.682] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:15:26.682] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:15:26.682] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:15:26.683] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:15:26.685] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:15:26.685] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:15:26.686] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:15:26.686] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:15:26.688] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:15:26.703] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:15:26.703] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:15:26.802] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x029f29c964180d32 (took 10 ms)
+[20160730 21:15:26.824] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:15:26.824] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:15:26.882] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:15:26.883] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:15:26.892] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xdee503b2] REGISTERED
+[20160730 21:15:26.894] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xdee503b2] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:15:26.896] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xdee503b2, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:15:30.049] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xdee503b2, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x6c3ceb40, /127.0.0.1:54404 => /127.0.0.1:8090]
+[20160730 21:15:30.052] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xdee503b2, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x0c50ca34, /127.0.0.1:54405 => /127.0.0.1:8090]
+[20160730 21:15:30.088] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:15:30.102] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:15:30.110] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:15:30.117] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:76][channelRead0] jerry 000:PlainText
+[20160730 21:15:30.117] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:15:30.117] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:15:30.117] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:15:30.117] [DEBUG] [nioEventLoopGroup-3-1] [HttpServerHandler.java:115][channelRead0] jerry 001:JSON
+[20160730 21:15:30.123] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:15:30.124] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:191][process] uri:/wx/auth/pt, spend:1ms
+[20160730 21:15:30.166] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:197][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:15:30.172] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:15:30.173] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:19:43.224] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:19:43.235] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:19:43.240] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:19:43.251] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:19:43.254] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:19:43.254] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:19:43.254] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:19:43.255] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:19:43.255] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:19:43.255] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:19:43.256] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:19:43.256] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:19:43.258] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:19:43.259] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:19:43.259] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:19:43.260] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:19:43.261] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:19:43.277] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:19:43.277] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:19:43.379] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x225656f086d0c54c (took 9 ms)
+[20160730 21:19:43.400] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:19:43.400] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:19:43.453] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:19:43.453] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:19:43.462] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2d3d9dc5] REGISTERED
+[20160730 21:19:43.468] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2d3d9dc5] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:19:43.470] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2d3d9dc5, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:19:59.832] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2d3d9dc5, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xb0dc17eb, /127.0.0.1:54490 => /127.0.0.1:8090]
+[20160730 21:19:59.834] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x2d3d9dc5, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xe4ced1da, /127.0.0.1:54491 => /127.0.0.1:8090]
+[20160730 21:19:59.868] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:19:59.880] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:19:59.889] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:19:59.897] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:19:59.897] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:19:59.897] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:19:59.903] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:19:59.904] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:1ms
+[20160730 21:19:59.948] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:19:59.954] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:19:59.954] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:20:55.370] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:20:55.381] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:20:55.386] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:20:55.398] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:20:55.400] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:20:55.400] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:20:55.401] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:20:55.401] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:20:55.402] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:20:55.402] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:20:55.402] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:20:55.403] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:20:55.405] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:20:55.405] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:20:55.406] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:20:55.406] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:20:55.407] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:20:55.423] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:20:55.423] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:20:55.525] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x66f574f4e2b95a99 (took 10 ms)
+[20160730 21:20:55.546] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:20:55.546] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:20:55.615] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:20:55.615] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:20:55.630] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x94eb727f] REGISTERED
+[20160730 21:20:55.632] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x94eb727f] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:20:55.634] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x94eb727f, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:21:01.218] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x94eb727f, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x90285c7f, /127.0.0.1:54528 => /127.0.0.1:8090]
+[20160730 21:21:01.222] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x94eb727f, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xa2bedde9, /127.0.0.1:54529 => /127.0.0.1:8090]
+[20160730 21:21:01.257] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:21:01.275] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:21:01.284] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:21:01.314] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:21:01.314] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:21:01.314] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:21:01.321] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:21:01.321] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:190][process] uri:/wx/auth/pt, spend:0ms
+[20160730 21:21:01.357] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:196][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:21:01.363] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:21:01.364] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:21:46.908] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:21:46.919] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:21:46.924] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:21:46.936] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:21:46.938] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:21:46.939] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:21:46.939] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:21:46.939] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:21:46.940] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:21:46.940] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:21:46.940] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:21:46.941] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:21:46.943] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:21:46.943] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:21:46.944] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:21:46.944] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:21:46.946] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:21:46.960] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:21:46.961] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:21:47.059] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x8cea54bdc99d8334 (took 10 ms)
+[20160730 21:21:47.081] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:21:47.081] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:21:47.147] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:21:47.148] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:21:47.158] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf3e3f93f] REGISTERED
+[20160730 21:21:47.160] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf3e3f93f] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:21:47.162] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf3e3f93f, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:21:50.565] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xf3e3f93f, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xeff73df1, /127.0.0.1:54563 => /127.0.0.1:8090]
+[20160730 21:21:50.598] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:21:50.609] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:21:50.617] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:21:50.623] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:21:50.624] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:21:50.624] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:21:50.630] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:22][handle] request: a=shit
+[20160730 21:21:50.631] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:193][process] uri:/wx/auth/pt, spend:1ms
+[20160730 21:21:50.676] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= {"ret":0,"data":"success"}
+[20160730 21:21:50.683] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:21:50.683] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:45:26.368] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:45:26.377] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:45:26.381] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:45:26.395] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:45:26.397] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:45:26.397] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:45:26.398] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:45:26.398] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:45:26.399] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:45:26.399] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:45:26.399] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:45:26.400] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:45:26.402] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:45:26.402] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:45:26.403] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:45:26.404] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:45:26.405] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:45:26.423] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:45:26.423] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:45:26.527] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x508447934f8e5796 (took 11 ms)
+[20160730 21:45:26.552] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:45:26.552] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:45:26.617] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:45:26.617] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:45:26.634] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22] REGISTERED
+[20160730 21:45:26.636] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:45:26.638] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:45:30.696] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x1d8904e0, /127.0.0.1:54701 => /127.0.0.1:8090]
+[20160730 21:45:30.699] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x19c08e11, /127.0.0.1:54702 => /127.0.0.1:8090]
+[20160730 21:45:30.761] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:45:30.783] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:45:30.806] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:45:30.816] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:45:30.817] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:45:30.817] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:45:30.819] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : a=shit
+[20160730 21:45:30.836] [DEBUG] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:31][handle] jerry shti: shit
+[20160730 21:45:30.836] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth/pt, spend:18ms
+[20160730 21:45:30.837] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= success
+[20160730 21:45:30.846] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibDecoder: true
+[20160730 21:45:30.846] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.noJdkZlibEncoder: false
+[20160730 21:45:32.066] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:45:32.067] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:45:32.068] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:45:32.071] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : a=shit
+[20160730 21:45:32.072] [DEBUG] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:31][handle] jerry shti: shit
+[20160730 21:45:32.080] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth/pt, spend:9ms
+[20160730 21:45:32.081] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= success
+[20160730 21:45:32.821] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth/pt
+[20160730 21:45:32.823] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 127.0.0.1
+[20160730 21:45:32.823] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:45:32.826] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : a=shit
+[20160730 21:45:32.827] [DEBUG] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:31][handle] jerry shti: shit
+[20160730 21:45:32.828] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth/pt, spend:2ms
+[20160730 21:45:32.828] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= success
+[20160730 21:46:42.106] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xa61de3d1, /192.168.1.104:54730 => /192.168.1.104:8090]
+[20160730 21:46:42.250] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:46:42.250] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:46:42.251] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:79][channelRead0] query params: a=shit
+[20160730 21:46:42.251] [INFO] [nioEventLoopGroup-3-3] [WXServerAuthHandler.java:28][handle] request 1 : a=shit
+[20160730 21:46:42.251] [DEBUG] [nioEventLoopGroup-3-3] [WXServerAuthHandler.java:31][handle] jerry shti: shit
+[20160730 21:46:42.251] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:0ms
+[20160730 21:46:42.251] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:199][writeResponse] rsp= success
+[20160730 21:46:45.258] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x17c77e22, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xe0f34e4b, /192.168.1.104:54733 => /192.168.1.104:8090]
+[20160730 21:46:45.392] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:46:45.393] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:46:45.393] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:79][channelRead0] query params: signature=0afb3c8242838a2783ab88c0caa689c3d029952b&echostr=7805348565047181279&timestamp=1469886422&nonce=2115519786
+[20160730 21:46:45.394] [INFO] [nioEventLoopGroup-3-4] [WXServerAuthHandler.java:28][handle] request 1 : signature=0afb3c8242838a2783ab88c0caa689c3d029952b&echostr=7805348565047181279&timestamp=1469886422&nonce=2115519786
+[20160730 21:46:45.394] [DEBUG] [nioEventLoopGroup-3-4] [WXServerAuthHandler.java:31][handle] jerry shti: null
+[20160730 21:46:45.395] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:46:45.395] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:199][writeResponse] rsp= success
+[20160730 21:47:38.358] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 21:47:38.369] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 21:47:38.373] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 21:47:38.385] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 21:47:38.388] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 21:47:38.388] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 21:47:38.388] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 21:47:38.389] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 21:47:38.390] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 21:47:38.390] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 21:47:38.390] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 21:47:38.390] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 21:47:38.393] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 21:47:38.393] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 21:47:38.393] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 21:47:38.394] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 21:47:38.395] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 21:47:38.410] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 21:47:38.411] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 21:47:38.514] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0x923ba46434e0f629 (took 12 ms)
+[20160730 21:47:38.535] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 21:47:38.536] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 21:47:38.597] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 21:47:38.597] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 21:47:38.608] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa] REGISTERED
+[20160730 21:47:38.610] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 21:47:38.611] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 21:47:47.918] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x9593a026, /192.168.1.104:54769 => /192.168.1.104:8090]
+[20160730 21:47:47.966] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 21:47:48.036] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 21:47:48.057] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 21:47:48.070] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:47:48.070] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:47:48.070] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: signature=e20f1f5d005acbdd51e0561d982ec7a49bd33abd&echostr=865371955392282455&timestamp=1469886485&nonce=1521389801
+[20160730 21:47:48.072] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : signature=e20f1f5d005acbdd51e0561d982ec7a49bd33abd&echostr=865371955392282455&timestamp=1469886485&nonce=1521389801
+[20160730 21:47:48.073] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:47:48.073] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= 865371955392282455
+[20160730 21:50:18.534] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x14bb8a9a, /192.168.1.104:54823 => /192.168.1.104:8090]
+[20160730 21:50:18.596] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:50:18.597] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:50:18.598] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:79][channelRead0] query params: signature=d2f64067b6847910fdc8193b0f49bd27c0b1ebd1&timestamp=1469886636&nonce=1052633132&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:50:19.959] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886636</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[abc
+]]></Content>
+<MsgId>6313115030902318208</MsgId>
+</xml>
+[20160730 21:50:19.960] [INFO] [nioEventLoopGroup-3-2] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886636</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[abc
+]]></Content>
+<MsgId>6313115030902318208</MsgId>
+</xml>
+[20160730 21:50:19.960] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:0ms
+[20160730 21:50:19.961] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:50:55.713] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x55bf29c3, /192.168.1.104:54829 => /192.168.1.104:8090]
+[20160730 21:50:56.196] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:50:56.223] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:50:56.224] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:79][channelRead0] query params: signature=c22b0d60b42deabf2e9601088c4d57455e397119&timestamp=1469886673&nonce=591273124&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:50:56.464] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886673</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[史纪军]]></Content>
+<MsgId>6313115189816108190</MsgId>
+</xml>
+[20160730 21:50:56.465] [INFO] [nioEventLoopGroup-3-3] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886673</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[史纪军]]></Content>
+<MsgId>6313115189816108190</MsgId>
+</xml>
+[20160730 21:50:56.466] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:50:56.466] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:51:29.865] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x307c3be9, /192.168.1.104:54846 => /192.168.1.104:8090]
+[20160730 21:51:29.935] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:51:29.935] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:51:29.936] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:79][channelRead0] query params: signature=c2c797d19618b86c1b5e340051d569d66ebe86ac&timestamp=1469886707&nonce=1751490442&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:51:30.370] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886707</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[abcd]]></Content>
+<MsgId>6313115335844996276</MsgId>
+</xml>
+[20160730 21:51:30.371] [INFO] [nioEventLoopGroup-3-4] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886707</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[abcd]]></Content>
+<MsgId>6313115335844996276</MsgId>
+</xml>
+[20160730 21:51:30.372] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:51:30.373] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:54:14.967] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x3e750e24, /192.168.1.104:54887 => /192.168.1.104:8090]
+[20160730 21:54:15.028] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:54:15.029] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:54:15.029] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:79][channelRead0] query params: signature=8c7f6ffd9682f92bacb057913b2b2baab1a24330&timestamp=1469886872&nonce=390180561&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:54:15.087] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886872</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[hdhdhh]]></Content>
+<MsgId>6313116044514600321</MsgId>
+</xml>
+[20160730 21:54:15.088] [INFO] [nioEventLoopGroup-3-5] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886872</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[hdhdhh]]></Content>
+<MsgId>6313116044514600321</MsgId>
+</xml>
+[20160730 21:54:15.089] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:54:15.089] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:54:18.080] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xb4cc2789, /192.168.1.104:54888 => /192.168.1.104:8090]
+[20160730 21:54:18.148] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:54:18.154] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:54:18.155] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:79][channelRead0] query params: signature=b66354cd52829543071c7fceec34187ada3b5afd&timestamp=1469886875&nonce=1401720912&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:54:18.226] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886875</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[dd]]></Content>
+<MsgId>6313116057399502214</MsgId>
+</xml>
+[20160730 21:54:18.227] [INFO] [nioEventLoopGroup-3-6] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886875</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[dd]]></Content>
+<MsgId>6313116057399502214</MsgId>
+</xml>
+[20160730 21:54:18.227] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:0ms
+[20160730 21:54:18.228] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:54:20.120] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xc9a927e3, /192.168.1.104:54889 => /192.168.1.104:8090]
+[20160730 21:54:20.183] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:54:20.184] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:54:20.184] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:79][channelRead0] query params: signature=1351f27a6e37a190f4fe37ff7dd5674f727be42c&timestamp=1469886877&nonce=1763325061&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:54:20.444] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886877</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[d]]></Content>
+<MsgId>6313116065989436809</MsgId>
+</xml>
+[20160730 21:54:20.444] [INFO] [nioEventLoopGroup-3-7] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886877</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[d]]></Content>
+<MsgId>6313116065989436809</MsgId>
+</xml>
+[20160730 21:54:20.445] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:54:20.445] [INFO] [nioEventLoopGroup-3-7] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:55:40.002] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xae2776e8, /192.168.1.104:54917 => /192.168.1.104:8090]
+[20160730 21:55:40.371] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:55:40.372] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:55:40.372] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:79][channelRead0] query params: signature=f5c58f57007d7124f7ba2146edf2636f0b526136&timestamp=1469886957&nonce=2115580427&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:55:40.637] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886957</CreateTime>
+<MsgType><![CDATA[voice]]></MsgType>
+<MediaId><![CDATA[7UuSX5c7DVkMpP-za0vf3i4764B-_bekgQdj8wj849hODvtUSgIjUlBR-A2yTrcT]]></MediaId>
+<Format><![CDATA[amr]]></Format>
+<MsgId>6313116409586820614</MsgId>
+<Recognition><![CDATA[]]></Recognition>
+</xml>
+[20160730 21:55:40.637] [INFO] [nioEventLoopGroup-3-8] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469886957</CreateTime>
+<MsgType><![CDATA[voice]]></MsgType>
+<MediaId><![CDATA[7UuSX5c7DVkMpP-za0vf3i4764B-_bekgQdj8wj849hODvtUSgIjUlBR-A2yTrcT]]></MediaId>
+<Format><![CDATA[amr]]></Format>
+<MsgId>6313116409586820614</MsgId>
+<Recognition><![CDATA[]]></Recognition>
+</xml>
+[20160730 21:55:40.638] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:55:40.638] [INFO] [nioEventLoopGroup-3-8] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:24.548] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x18502f0f, /192.168.1.104:54928 => /192.168.1.104:8090]
+[20160730 21:56:28.257] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:28.258] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:28.258] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: signature=dbd6c0802a7d080547ca179fab7bd35fa1617d86&timestamp=1469887001&nonce=1709933290&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:33.179] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:33.179] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:33.180] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:56:33.180] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:33.180] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xe263c771, /192.168.1.104:54933 => /192.168.1.104:8090]
+[20160730 21:56:33.183] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x7caf7253, /192.168.1.104:54934 => /192.168.1.104:8090]
+[20160730 21:56:33.249] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:33.249] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:33.250] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:79][channelRead0] query params: signature=5beec0a44acb2e17f2e94d3fd293d21fdcc7e66a&timestamp=1469887006&nonce=552547022&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:34.115] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887006</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[xdd]]></Content>
+<MsgId>6313116620040218186</MsgId>
+</xml>
+[20160730 21:56:34.115] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:34.116] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:34.117] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:79][channelRead0] query params: signature=dbd6c0802a7d080547ca179fab7bd35fa1617d86&timestamp=1469887001&nonce=1709933290&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:34.118] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:34.119] [INFO] [nioEventLoopGroup-3-3] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:34.120] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:56:34.120] [INFO] [nioEventLoopGroup-3-3] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:34.116] [INFO] [nioEventLoopGroup-3-2] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887006</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[xdd]]></Content>
+<MsgId>6313116620040218186</MsgId>
+</xml>
+[20160730 21:56:34.124] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:8ms
+[20160730 21:56:34.124] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:34.129] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x661e8255, /192.168.1.104:54935 => /192.168.1.104:8090]
+[20160730 21:56:34.200] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xcd8c7e57, /192.168.1.104:54936 => /192.168.1.104:8090]
+[20160730 21:56:34.274] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:34.275] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:34.275] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:79][channelRead0] query params: signature=5beec0a44acb2e17f2e94d3fd293d21fdcc7e66a&timestamp=1469887006&nonce=552547022&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:34.277] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887006</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[xdd]]></Content>
+<MsgId>6313116620040218186</MsgId>
+</xml>
+[20160730 21:56:34.277] [INFO] [nioEventLoopGroup-3-4] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887006</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[xdd]]></Content>
+<MsgId>6313116620040218186</MsgId>
+</xml>
+[20160730 21:56:34.278] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:56:34.278] [INFO] [nioEventLoopGroup-3-4] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:34.407] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:34.408] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:34.408] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:79][channelRead0] query params: signature=dbd6c0802a7d080547ca179fab7bd35fa1617d86&timestamp=1469887001&nonce=1709933290&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:34.412] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:34.413] [INFO] [nioEventLoopGroup-3-5] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887001</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[as]]></Content>
+<MsgId>6313116598565381697</MsgId>
+</xml>
+[20160730 21:56:34.413] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:0ms
+[20160730 21:56:34.414] [INFO] [nioEventLoopGroup-3-5] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 21:56:39.315] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0x8bda61fa, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xad526c8e, /192.168.1.104:54941 => /192.168.1.104:8090]
+[20160730 21:56:41.862] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 21:56:41.863] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 21:56:41.863] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:79][channelRead0] query params: signature=c34dde2f60f834f7f6e9ea2f4b6b2203541ba3d2&timestamp=1469887017&nonce=776173093&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 21:56:41.934] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887017</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[@]]></Content>
+<MsgId>6313116667284858458</MsgId>
+</xml>
+[20160730 21:56:41.934] [INFO] [nioEventLoopGroup-3-6] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887017</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[@]]></Content>
+<MsgId>6313116667284858458</MsgId>
+</xml>
+[20160730 21:56:41.935] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 21:56:41.935] [INFO] [nioEventLoopGroup-3-6] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 22:00:46.168] [INFO] [main] [HttpServer.java:43][start] start http server, port:8090
+[20160730 22:00:46.180] [DEBUG] [main] [Slf4JLogger.java:71][debug] Using SLF4J as the default logging framework
+[20160730 22:00:46.184] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.eventLoopThreads: 8
+[20160730 22:00:46.198] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Buffer.address: available
+[20160730 22:00:46.200] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe.theUnsafe: available
+[20160730 22:00:46.201] [DEBUG] [main] [Slf4JLogger.java:71][debug] sun.misc.Unsafe.copyMemory: available
+[20160730 22:00:46.201] [DEBUG] [main] [Slf4JLogger.java:76][debug] java.nio.Bits.unaligned: true
+[20160730 22:00:46.202] [DEBUG] [main] [Slf4JLogger.java:71][debug] Platform: Windows
+[20160730 22:00:46.202] [DEBUG] [main] [Slf4JLogger.java:76][debug] Java version: 8
+[20160730 22:00:46.202] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noUnsafe: false
+[20160730 22:00:46.203] [DEBUG] [main] [Slf4JLogger.java:76][debug] sun.misc.Unsafe: available
+[20160730 22:00:46.203] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noJavassist: false
+[20160730 22:00:46.206] [DEBUG] [main] [Slf4JLogger.java:71][debug] Javassist: unavailable
+[20160730 22:00:46.206] [DEBUG] [main] [Slf4JLogger.java:71][debug] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[20160730 22:00:46.207] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[20160730 22:00:46.207] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20160730 22:00:46.208] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noPreferDirect: false
+[20160730 22:00:46.225] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.noKeySetOptimization: false
+[20160730 22:00:46.225] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20160730 22:00:46.332] [DEBUG] [main] [Slf4JLogger.java:71][debug] -Dio.netty.initialSeedUniquifier: 0xceeb77744a09198e (took 9 ms)
+[20160730 22:00:46.352] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.allocator.type: unpooled
+[20160730 22:00:46.353] [DEBUG] [main] [Slf4JLogger.java:76][debug] -Dio.netty.threadLocalDirectBufferSize: 65536
+[20160730 22:00:46.414] [DEBUG] [main] [Slf4JLogger.java:86][debug] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[20160730 22:00:46.414] [DEBUG] [main] [Slf4JLogger.java:81][debug] \proc\sys\net\core\somaxconn: 200 (non-existent)
+[20160730 22:00:46.423] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc5af7ab7] REGISTERED
+[20160730 22:00:46.426] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc5af7ab7] BIND(0.0.0.0/0.0.0.0:8090)
+[20160730 22:00:46.427] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc5af7ab7, /0:0:0:0:0:0:0:0:8090] ACTIVE
+[20160730 22:00:54.654] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc5af7ab7, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0x67a11e3d, /192.168.1.104:55038 => /192.168.1.104:8090]
+[20160730 22:00:54.693] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:81][debug] -Dio.netty.leakDetectionLevel: simple
+[20160730 22:00:54.731] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] -Dio.netty.recycler.maxCapacity.default: 262144
+[20160730 22:00:54.754] [DEBUG] [nioEventLoopGroup-3-1] [Slf4JLogger.java:76][debug] java.nio.ByteBuffer.cleaner(): available
+[20160730 22:00:54.764] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 22:00:54.764] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 22:00:54.765] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:79][channelRead0] query params: signature=58bf3e2d3b16b749265378d6069af0c293fa66ea&timestamp=1469887271&nonce=422691705&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 22:00:54.845] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887271</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[gggg]]></Content>
+<MsgId>6313117758206551802</MsgId>
+</xml>
+[20160730 22:00:54.845] [INFO] [nioEventLoopGroup-3-1] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887271</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[gggg]]></Content>
+<MsgId>6313117758206551802</MsgId>
+</xml>
+[20160730 22:00:54.847] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:2ms
+[20160730 22:00:54.848] [INFO] [nioEventLoopGroup-3-1] [HttpServerHandler.java:199][writeResponse] rsp= null
+[20160730 22:01:15.965] [INFO] [nioEventLoopGroup-2-1] [Slf4JLogger.java:101][info] [id: 0xc5af7ab7, /0:0:0:0:0:0:0:0:8090] RECEIVED: [id: 0xcd7cda11, /192.168.1.104:55042 => /192.168.1.104:8090]
+[20160730 22:01:16.560] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:77][channelRead0] request uri: /wx/auth
+[20160730 22:01:16.562] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:78][channelRead0] clientIp: 192.168.1.104
+[20160730 22:01:16.562] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:79][channelRead0] query params: signature=717aa75e38a87c51a18448e5daf316e449f11041&timestamp=1469887293&nonce=2038099146&openid=oVTG9t01eQScAX1jhSfFaqT6nRLc
+[20160730 22:01:17.867] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:158][processPlainText] reqbody: <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887293</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[tttt]]></Content>
+<MsgId>6313117852695832349</MsgId>
+</xml>
+[20160730 22:01:17.868] [INFO] [nioEventLoopGroup-3-2] [WXServerAuthHandler.java:28][handle] request 1 : <xml><ToUserName><![CDATA[gh_f134b13a6d41]]></ToUserName>
+<FromUserName><![CDATA[oVTG9t01eQScAX1jhSfFaqT6nRLc]]></FromUserName>
+<CreateTime>1469887293</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[tttt]]></Content>
+<MsgId>6313117852695832349</MsgId>
+</xml>
+[20160730 22:01:17.869] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:164][processPlainText] uri:/wx/auth, spend:1ms
+[20160730 22:01:17.869] [INFO] [nioEventLoopGroup-3-2] [HttpServerHandler.java:199][writeResponse] rsp= null
