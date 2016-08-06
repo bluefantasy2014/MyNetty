@@ -15,8 +15,7 @@ public class HttpServerService {
 	{
 		PropertyConfigurator.configure("log4j.properties");
 		HttpServer server  = new HttpServer();
-		server.register("/wx/auth", new WXServerAuthHandler());
-		server.register("/wx/auth/pt", new WXServerAuthHandler());
+		server.register("/wx", new WXServerAuthHandler());
 		try
 		{
 			server.start(PORT);

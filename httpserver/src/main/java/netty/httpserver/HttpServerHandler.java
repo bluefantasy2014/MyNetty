@@ -60,7 +60,6 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<Object> {
 
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
-		ResponseType resFormat = ResponseType.PlainText; 
 		if (msg instanceof HttpRequest) {
 			HttpRequest request = this.request = (HttpRequest) msg;
 			URI uri = new URI(request.getUri());
@@ -68,11 +67,6 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<Object> {
 			queryParams = uri.getQuery();
             clientIp = getClientIp(ctx);
             
-			if (uriPath !=null && uriPath.endsWith("/pt")){
-				resFormat = ResponseType.PlainText; 
-			}else if (uriPath !=null && uriPath.endsWith("/xml")){
-				resFormat = ResponseType.XML; 
-			}
 //			new Exception().printStackTrace(System.out);
             LOG.info("request uri: " + uriPath);
             LOG.info("clientIp: " + clientIp);
@@ -115,16 +109,8 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<Object> {
             if (msg instanceof LastHttpContent) {
             	LastHttpContent trailer = (LastHttpContent) msg;
             	try {
-            		switch (resFormat) {
-	            		case JSON: 
-	            			 process();
-	            			 break; 
-	            		case PlainText:
-	            			 processPlainText();
-	            			 break; 
-            		} 
+	            	   processPlainText();
                 } catch (Throwable e) {
-                	//TODO : add plaintext support
                 	rspbody.append(String.format("{\"ret\":%d,\"msg\":\"uncatched exception: %s\"}", ErrorCode.UNKOWN_EXCEPTION, e.getMessage()));
                     LOG.error(e.getMessage(), e);
                 }
@@ -166,7 +152,7 @@ public class HttpServerHandler extends SimpleChannelInboundHandler<Object> {
 		rspbody.append(response.toString());
 	}
 	
-	//默认是json格式的返回值
+	//默认是json格式的返回值  NOT USED
 	public void process() {
 		JSONObject response = new JSONObject();
 		if ((request.getMethod().equals(HttpMethod.GET) && StringUtils.isEmpty(queryParams)) 
