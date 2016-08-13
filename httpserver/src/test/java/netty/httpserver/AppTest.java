@@ -7,6 +7,7 @@ import junit.framework.TestSuite;
 
 // change 001
 //git test
+//change 002
 /**
  * Unit test for simple App.
  */
