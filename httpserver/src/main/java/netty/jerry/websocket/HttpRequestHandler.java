@@ -35,7 +35,7 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
 				send100Continue(ctx); 
 			}
 			
-			RandomAccessFile file = new RandomAccessFile("/path/to/index.html","r"); 
+			RandomAccessFile file = new RandomAccessFile("./log4j.properties","r"); 
 			
 			HttpResponse response = new DefaultHttpResponse(request.getProtocolVersion(),HttpResponseStatus.OK); 
 			response.headers().set(HttpHeaders.Names.CONTENT_TYPE, "text/plain; charset=UTF-8"); 
