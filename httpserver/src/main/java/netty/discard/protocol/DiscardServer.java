@@ -1,5 +1,7 @@
 package netty.discard.protocol;
 
+import org.apache.log4j.PropertyConfigurator;
+
 import io.netty.bootstrap.ServerBootstrap;
 
 import io.netty.channel.ChannelFuture;
@@ -22,6 +24,8 @@ public class DiscardServer {
     }
 
     public void run() throws Exception {
+		PropertyConfigurator.configure("log4j.properties");
+
         EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
