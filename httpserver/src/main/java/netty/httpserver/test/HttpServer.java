@@ -32,7 +32,7 @@ public class HttpServer {
 	}
 	
 	public static void main(String[] args) {
-		int port = 9090;
+		int port = 10000;
 		
 		PropertyConfigurator.configure("log4j.properties");
 		

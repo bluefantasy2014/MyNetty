@@ -22,7 +22,7 @@ import netty.common.utils.MyFileUtil;
 
 public class ServeJsonFileHandler extends SimpleChannelInboundHandler<Object> {
 	private static final Logger LOG = Logger.getLogger(ServeJsonFileHandler.class);
-	private static String jsonFileName = "123.json"; 
+	private static String jsonFileName = "bankcardreport.json"; 
 
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
@@ -34,7 +34,9 @@ public class ServeJsonFileHandler extends SimpleChannelInboundHandler<Object> {
 		if (msg instanceof HttpContent) {
 			LastHttpContent trailingHeaders = (LastHttpContent) msg;
 			String responseMsg = readJsonFileAsResponse(jsonFileName); 
-			sendResponse(responseMsg,ctx,trailingHeaders); 
+			StringBuilder sb =  new StringBuilder(); 
+			sb.append("{\"resCode\":\"000000\",\"rawResponse\":").append(responseMsg).append("}"); 
+			sendResponse(sb.toString(),ctx,trailingHeaders); 
 			ctx.writeAndFlush(Unpooled.EMPTY_BUFFER).addListener(ChannelFutureListener.CLOSE);
 		}
 	} 
