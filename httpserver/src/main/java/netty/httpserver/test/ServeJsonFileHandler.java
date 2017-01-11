@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -24,6 +25,16 @@ public class ServeJsonFileHandler extends SimpleChannelInboundHandler<Object> {
 	private static final Logger LOG = Logger.getLogger(ServeJsonFileHandler.class);
 	private static String jsonFileName = "bankcardreport.json"; 
 
+	
+	
+	
+	@Override
+	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+		// TODO Auto-generated method stub
+		super.channelRead(ctx, msg);
+		
+	}
+
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
 		if (msg instanceof HttpRequest) {
@@ -32,6 +43,11 @@ public class ServeJsonFileHandler extends SimpleChannelInboundHandler<Object> {
 		}
 		
 		if (msg instanceof HttpContent) {
+			//测试死锁，但是死锁没发生。why？？？？ java doc 上说会有死锁。。
+			LOG.info("Before testing");
+			 ChannelFuture future = ctx.channel().close();
+			future.awaitUninterruptibly(); 
+			LOG.info("After testing");
 			LastHttpContent trailingHeaders = (LastHttpContent) msg;
 			String responseMsg = readJsonFileAsResponse(jsonFileName); 
 			StringBuilder sb =  new StringBuilder(); 
