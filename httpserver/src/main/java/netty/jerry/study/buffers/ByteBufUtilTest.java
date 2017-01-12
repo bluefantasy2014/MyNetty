@@ -1,4 +1,4 @@
-package netty.jerry.test;
+package netty.jerry.study.buffers;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;

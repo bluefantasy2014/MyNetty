@@ -44,10 +44,12 @@ public class ServeJsonFileHandler extends SimpleChannelInboundHandler<Object> {
 		
 		if (msg instanceof HttpContent) {
 			//测试死锁，但是死锁没发生。why？？？？ java doc 上说会有死锁。。
-			LOG.info("Before testing");
-			 ChannelFuture future = ctx.channel().close();
-			future.awaitUninterruptibly(); 
-			LOG.info("After testing");
+			// http://netty.io/4.0/api/io/netty/channel/ChannelFuture.html
+			
+//			LOG.info("Before testing");
+//			ChannelFuture future = ctx.channel().close();
+//			future.awaitUninterruptibly(); 
+//			LOG.info("After testing");
 			LastHttpContent trailingHeaders = (LastHttpContent) msg;
 			String responseMsg = readJsonFileAsResponse(jsonFileName); 
 			StringBuilder sb =  new StringBuilder(); 
