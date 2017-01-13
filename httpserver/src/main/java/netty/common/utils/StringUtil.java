@@ -1,5 +1,6 @@
 package netty.common.utils;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class StringUtil {
@@ -8,21 +9,24 @@ public class StringUtil {
 		if (str == null || str.trim().length() <= 0)
 		{
 			return true;
+		}else {
+			return false;
 		}
-		return false;
 	}
 	
-   public static void parseQueryParam(String queryString, Map<String,String> queryStringMap) {
-    	if ( !isEmpty(queryString) ) {
-	        String[] queryStringArray = queryString.split("&");
-	        for (String qs : queryStringArray) {
-	            String[] queryStringParam = qs.split("=");
-	            String key = queryStringParam[0];
-	            String value = "";
-	            if (queryStringParam.length > 1)
-	                value = queryStringParam[1];
-	            queryStringMap.put(key, value);
-	        }
-    	}
-    }
+   
+    /*解析httpRequest 的URI中的查询参数为Map*/
+	public static Map<String, String> parseQueryParamAsMap(String queryURI) {
+		Map<String, String> map = new HashMap<String, String>();
+
+		if (isEmpty(queryURI))
+			return map;
+		
+		String[] paras = queryURI.split("&");
+		for (String s : paras) {
+			String[] params = s.split("=");
+			map.put(params[0], params[1]);
+		}
+		return map;
+	}
 }
