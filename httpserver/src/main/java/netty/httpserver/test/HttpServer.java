@@ -26,7 +26,7 @@ public class HttpServer {
     	        ChannelPipeline pipeline = ch.pipeline();
     	        pipeline.addLast("decoder", new HttpRequestDecoder());
     	        pipeline.addLast("encoder", new HttpResponseEncoder());
-    	        pipeline.addLast("handler", new ServeJsonFileHandler());
+    	        pipeline.addLast("handler", new MyHttpFileHandler());
     	        //Jerry: 注意此处所有的ChannelHandler全部是 one ChannelHandler per channel. 也就是说每来一个新的连接，对应的有一套的对象。
     	    }
 		};
