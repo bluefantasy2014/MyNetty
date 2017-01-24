@@ -2,6 +2,7 @@ package netty.httpserver.test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.net.URI;
@@ -40,26 +41,21 @@ import netty.common.utils.WebSocketHelper;
 
 public class MyHttpFileHandler extends SimpleChannelInboundHandler<Object> {
 	private static final Logger LOG = Logger.getLogger(MyHttpFileHandler.class);
-	private String jsonFileName = "bankcardreport.json"; 
+	private static String fileName = "index.html"; 
 	private Map<String,String> requestParas ; 
 	private boolean zeroCopyFileMode = false; 
 	
 	private static MimetypesFileTypeMap mimeTypesMap;
 	   
-	public MyHttpFileHandler() {
-		  if (mimeTypesMap == null) {
-	            InputStream is = this.getClass().getResourceAsStream("/META-INF/server.mime.types");
-	            if (is != null) {
-	               mimeTypesMap = new MimetypesFileTypeMap(is);
-	            } else {
-	               LOG.error("Cannot load mime types!");
-	            }
-	         }
-	}
-	
-	@Override
-	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-		super.channelRead(ctx, msg);
+	static {
+		if (mimeTypesMap == null) {
+			InputStream is = MyHttpFileHandler.class.getResourceAsStream("/META-INF/server.mime.types");
+			if (is != null) {
+				mimeTypesMap = new MimetypesFileTypeMap(is);
+			} else {
+				LOG.error("Cannot load mime types!");
+			}
+		}
 	}
 
 	@Override
@@ -70,10 +66,10 @@ public class MyHttpFileHandler extends SimpleChannelInboundHandler<Object> {
 			URI uri = new URI(request.getUri()); 
 			LOG.info("query uri: " + uri.getQuery()); 
 			requestParas = StringUtil.parseQueryParamAsMap(uri.getQuery());
-			if (requestParas.get("filename") != null){
-				jsonFileName = requestParas.get("filename"); 
-			}
 			
+			if (requestParas.get("filename") != null){
+				fileName = requestParas.get("filename"); 
+			}
 			if ("true".equals(requestParas.get("zerocopy"))){
 				zeroCopyFileMode = true;
 			}
@@ -88,63 +84,21 @@ public class MyHttpFileHandler extends SimpleChannelInboundHandler<Object> {
 			// future.awaitUninterruptibly();
 			// LOG.info("After testing");
 
-			LastHttpContent trailingHeaders = (LastHttpContent) msg;
+			LastHttpContent trailingMsg = (LastHttpContent) msg;
 			long startTime = System.currentTimeMillis();
 			LOG.info("Start time: " + startTime + ", zeroCopyFileMode:" + zeroCopyFileMode);
 
-			// 此处有问题。。以后慢慢看看是什么原因。。？？？
+			ChannelFuture lastContentFuture;
 			if (zeroCopyFileMode) {
-				File file = new File(jsonFileName);
-				RandomAccessFile raf;
-				try {
-					raf = new RandomAccessFile(file, "r");
-				} catch (FileNotFoundException ignore) {
-					sendError(ctx, HttpResponseStatus.NOT_FOUND);
-					return;
-				}
-
-				long fileLength = raf.length();
-
-				HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
-				HttpUtil.setContentLength(response, fileLength);
-				setContentTypeHeader(response, file);
-				WebSocketHelper.setDateAndCacheHeaders(response, file);
-
-				// Write the initial line and the header.
-				ctx.write(response);
-
-				// Write the content.
-				ChannelFuture sendFileFuture;
-				ChannelFuture lastContentFuture;
-
-				sendFileFuture = ctx.write(new DefaultFileRegion(raf.getChannel(), 0, fileLength),
-						ctx.newProgressivePromise());
-				// Write the end marker.
-				lastContentFuture = ctx.writeAndFlush(LastHttpContent.EMPTY_LAST_CONTENT);
-
-				sendFileFuture.addListener(new ChannelProgressiveFutureListener() {
-					@Override
-					public void operationProgressed(ChannelProgressiveFuture future, long progress, long total) {
-						if (total < 0) { // total unknown
-							LOG.error(future.channel() + " Transfer progress: " + progress);
-						} else {
-							LOG.error(future.channel() + " Transfer progress: " + progress + " / " + total);
-						}
-					}
-
-					@Override
-					public void operationComplete(ChannelProgressiveFuture future) {
-						LOG.error(future.channel() + " Transfer complete.");
-					}
-				});
-			} else {
-				String responseMsg = readJsonFileAsResponse(jsonFileName);
-				StringBuilder sb = new StringBuilder();
-				sb.append("{\"resCode\":\"000000\",\"rawResponse\":").append(responseMsg).append("}");
-				sendResponse(sb.toString(), ctx, trailingHeaders);
+				sendZeroCopyFileResponse(ctx,fileName); 
+			} else { // 读取文本文件并拼装成字符串，如果是二进制文件,就会显示乱码。 
+				sendStringMsgResponse(ctx,fileName,trailingMsg.decoderResult().isSuccess()); 
 			}
-
-			ctx.writeAndFlush(Unpooled.EMPTY_BUFFER).addListener(new ChannelFutureListener() {
+			
+			// Write the end marker.
+			lastContentFuture = ctx.writeAndFlush(LastHttpContent.EMPTY_LAST_CONTENT);
+			
+			lastContentFuture.addListener(new ChannelFutureListener() {
 				@Override
 				public void operationComplete(ChannelFuture future) {
 					future.channel().close();
@@ -154,20 +108,63 @@ public class MyHttpFileHandler extends SimpleChannelInboundHandler<Object> {
 		}
 	} 
 	
-	  protected void setContentTypeHeader(HttpResponse response, File file) {
-	      response.headers().set(HttpHeaderNames.CONTENT_TYPE, mimeTypesMap.getContentType(file.getPath()));
-	   }
-	
-	private void sendResponse(String responseMsg, ChannelHandlerContext ctx, HttpObject httpObj) {
-		FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,
-				httpObj.getDecoderResult().isSuccess() ? HttpResponseStatus.OK : HttpResponseStatus.BAD_REQUEST,
-				Unpooled.copiedBuffer(responseMsg, CharsetUtil.UTF_8));
+	protected void setContentTypeHeader(HttpResponse response, File file) {
+		response.headers().set(HttpHeaderNames.CONTENT_TYPE, mimeTypesMap.getContentType(file.getPath()));
+	}
+
+	// 构建一个FullHttpResponse，包含传入的String参数，并写入ctx。
+	private void sendZeroCopyFileResponse(ChannelHandlerContext ctx,String fileName) throws IOException {
+		File file = new File(fileName);
+		RandomAccessFile raf;
+		try {
+			raf = new RandomAccessFile(file, "r");
+		} catch (FileNotFoundException ignore) {
+			sendError(ctx, HttpResponseStatus.NOT_FOUND);
+			return;
+		}
+
+		long fileLength = raf.length();
+		HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
+		HttpUtil.setContentLength(response, fileLength);
+		setContentTypeHeader(response, file);
+		WebSocketHelper.setDateAndCacheHeaders(response, file);
+		// Write the initial line and the header.
+		ctx.write(response);
+		// Write the content.
+		ChannelFuture sendFileFuture;
+		sendFileFuture = ctx.write(new DefaultFileRegion(raf.getChannel(), 0, fileLength),ctx.newProgressivePromise());
+		sendFileFuture.addListener(new ChannelProgressiveFutureListener() {
+			@Override
+			public void operationProgressed(ChannelProgressiveFuture future, long progress, long total) {
+				if (total < 0) { // total unknown
+					LOG.error(future.channel() + " Transfer progress: " + progress);
+				} else {
+					LOG.error(future.channel() + " Transfer progress: " + progress + " / " + total);
+				}
+			}
+
+			@Override
+			public void operationComplete(ChannelProgressiveFuture future) {
+				LOG.error(future.channel() + " Transfer complete.");
+			}
+		});
+	}
+
+	// 构建一个FullHttpResponse，包含传入的String参数，并写入ctx。
+	private void sendStringMsgResponse(ChannelHandlerContext ctx, String fileName, boolean decoderSuccess) {
+		String responseMsg = readJsonFileAsResponse(fileName);
+		StringBuilder sb = new StringBuilder();
+		sb.append("{\"resCode\":\"000000\",\"rawResponse\":").append(responseMsg).append("}");
+		
+		FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,decoderSuccess ? HttpResponseStatus.OK : HttpResponseStatus.BAD_REQUEST,
+				Unpooled.copiedBuffer(sb.toString(), CharsetUtil.UTF_8));
+		
 		response.headers().set(HttpHeaders.Names.CONTENT_TYPE, "application/json; charset=UTF-8");
 		ctx.write(response);
 	}
 	
-	private String readJsonFileAsResponse(String jsonFileName){
-		List<String> lines = MyFileUtil.readFileAsLines(jsonFileName); 
+	private String readJsonFileAsResponse(String fileName){
+		List<String> lines = MyFileUtil.readFileAsLines(fileName); 
 		StringBuilder sb = new StringBuilder(); 
 		for (String s:lines){
 			sb.append(s); 
