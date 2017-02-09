@@ -21,6 +21,11 @@ public class HeapByteBufTest {
 		//heapBuf.hasArray() : 是否是array-backed
 		ByteBuf heapBuf = Unpooled.wrappedBuffer(data);  
 		LOG.debug("Whether the ByteBuf is array-backed? :" + heapBuf.hasArray());
+		ByteBuf heapBuf1 = Unpooled.buffer(10);
+		heapBuf1.writeBytes("ffadfdasfdafdasfdafdasfdafdafdasfdafdasf".getBytes()); 
+		heapBuf1.clear();
+		heapBuf1.writeBytes("ffadfdasfdafdasfdafda".getBytes()); 
+		LOG.info("heapBuf1.hasArray: " + heapBuf1.hasArray()); 
 		
 		if (heapBuf.hasArray()){
 			byte[] array = heapBuf.array(); 

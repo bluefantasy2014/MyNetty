@@ -49,7 +49,7 @@ public class ChatServer {
 				endpoint.destroy();
 			}
 		});
-		System.exit(0);
+//		System.exit(0);
 		future.channel().closeFuture().syncUninterruptibly();
 	}
 }
