@@ -1,4 +1,4 @@
-package netty.discard.protocol.discard;
+package netty.protocol.discard;
 
 import org.apache.log4j.PropertyConfigurator;
 
