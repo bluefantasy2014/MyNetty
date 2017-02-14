@@ -1,4 +1,4 @@
-package netty.discard.protocol;
+package netty.discard.protocol.discard;
 
 import java.io.UnsupportedEncodingException;
 
