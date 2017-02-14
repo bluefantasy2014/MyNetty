@@ -23,7 +23,13 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
     	int size = bb.readableBytes();
     	byte[] data = new byte[size]; 
     	bb.readBytes(data, 0, size); 
-    	LOG.info(new String(data,"utf-8"));
+    	LOG.info("bytes in Hex format"); 
+    	for (byte b:data){
+    		System.out.format("0x%x ", b);
+    	}
+    	System.out.println("");
+    	
+    	LOG.info("bytes in UTF-8 format:" + new String(data,"utf-8"));
         ((ByteBuf) msg).release(); // (3)
     }
 
