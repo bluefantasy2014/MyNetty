@@ -72,6 +72,12 @@ public class DiscardClientHandler extends SimpleChannelInboundHandler<Object> {
         public void operationComplete(ChannelFuture future) {
             if (future.isSuccess()) {
             	System.out.println("call generateTraffic ");
+            	try {
+					Thread.sleep(20000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
                 generateTraffic();
             } else {
                 future.cause().printStackTrace();
