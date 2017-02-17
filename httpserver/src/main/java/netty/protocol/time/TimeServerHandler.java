@@ -17,42 +17,6 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
 
 	/*将一个int型的时间分成2部分发送给Client。 
 	 * */
-//    @Override
-//	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-//    	final ByteBuf time = ctx.alloc().buffer(4);  
-//    	
-//    	int currentTime = (int)(System.currentTimeMillis() / 1000L + 2208988800L);
-//    	time.writeInt(currentTime); 
-//    	LOG.info("print the time hex: " + ByteBufUtil.prettyHexDump(time));
-//    	//将bytes中的4个字节分别写入到time，time1中
-//    	ByteBuf part1 = time.slice(0, 2); //前2个字节
-//    	ByteBuf part2 = time.slice(2, 2); //后2个字节
-//    	LOG.info("print the part1 hex: " + ByteBufUtil.prettyHexDump(part1));
-//    	LOG.info("print the part2 hex: " + ByteBufUtil.prettyHexDump(part2));
-//    	
-//    	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
-//    	
-//    	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
-//        final ChannelFuture f = ctx.writeAndFlush(part1);  
-//        f.addListener(new ChannelFutureListener() {
-//            @Override
-//            public void operationComplete(ChannelFuture future) {
-//            	assert f == future;
-//            	ChannelFuture f1; 
-//            	LOG.info("print refcount 2:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
-//            	f1 = ctx.writeAndFlush(part2);
-//            	f1.addListener(new ChannelFutureListener() {
-//                    @Override
-//                    public void operationComplete(ChannelFuture future) {
-//                        assert f1 == future;
-//                        ctx.close();
-//                    }
-//                }); 
-//            }
-//        }); 
-//	}
-    
-    
     @Override
    	public void channelActive(ChannelHandlerContext ctx) throws Exception {
        	final ByteBuf time = ctx.alloc().buffer(4);  
@@ -66,30 +30,24 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
        	LOG.info("print the part1 hex: " + ByteBufUtil.prettyHexDump(part1));
        	LOG.info("print the part2 hex: " + ByteBufUtil.prettyHexDump(part2));
        	
-       	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+       	//如果注释掉这句话，就会报错，server将不能成功的给Client端发送数据。 
+       	time.retain(); part1.retain();  part2.retain(); 
        	
-       	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+       	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
         final ChannelFuture f = ctx.writeAndFlush(part1);  
-     	LOG.info("print refcount 2:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+        LOG.info("sleep 2 second to wait for part1 to be wrote");
+        
+        Thread.sleep(2000);
+     	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
      	final ChannelFuture f1 = ctx.writeAndFlush(part2);
        	
-       	
-         
-           f.addListener(new ChannelFutureListener() {
-               @Override
-               public void operationComplete(ChannelFuture future) {
-               	assert f == future;
-               	ChannelFuture f1; 
-              
-               	f1.addListener(new ChannelFutureListener() {
-                       @Override
-                       public void operationComplete(ChannelFuture future) {
-                           assert f1 == future;
-                           ctx.close();
-                       }
-                   }); 
-               }
-           }); 
+    	f1.addListener(new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) {
+                assert f1 == future;
+                ctx.close();
+            }
+        }); 
    	}
     
 //    @Override
