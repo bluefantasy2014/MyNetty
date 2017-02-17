@@ -1,5 +1,7 @@
 package netty.protocol.time;
 
+import java.nio.ByteBuffer;
+
 import org.apache.log4j.Logger;
 
 import io.netty.buffer.ByteBuf;
@@ -12,22 +14,98 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
 
 	private static final Logger LOG = Logger.getLogger(TimeServerHandler.class);
-	
 
+	/*将一个int型的时间分成2部分发送给Client。 
+	 * */
+//    @Override
+//	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+//    	final ByteBuf time = ctx.alloc().buffer(4);  
+//    	
+//    	int currentTime = (int)(System.currentTimeMillis() / 1000L + 2208988800L);
+//    	time.writeInt(currentTime); 
+//    	LOG.info("print the time hex: " + ByteBufUtil.prettyHexDump(time));
+//    	//将bytes中的4个字节分别写入到time，time1中
+//    	ByteBuf part1 = time.slice(0, 2); //前2个字节
+//    	ByteBuf part2 = time.slice(2, 2); //后2个字节
+//    	LOG.info("print the part1 hex: " + ByteBufUtil.prettyHexDump(part1));
+//    	LOG.info("print the part2 hex: " + ByteBufUtil.prettyHexDump(part2));
+//    	
+//    	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+//    	
+//    	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+//        final ChannelFuture f = ctx.writeAndFlush(part1);  
+//        f.addListener(new ChannelFutureListener() {
+//            @Override
+//            public void operationComplete(ChannelFuture future) {
+//            	assert f == future;
+//            	ChannelFuture f1; 
+//            	LOG.info("print refcount 2:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+//            	f1 = ctx.writeAndFlush(part2);
+//            	f1.addListener(new ChannelFutureListener() {
+//                    @Override
+//                    public void operationComplete(ChannelFuture future) {
+//                        assert f1 == future;
+//                        ctx.close();
+//                    }
+//                }); 
+//            }
+//        }); 
+//	}
+    
+    
     @Override
-	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-    	final ByteBuf time = ctx.alloc().buffer(4); // (2)
-        time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
-
-        final ChannelFuture f = ctx.writeAndFlush(time); // (3)
-        f.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture future) {
-                assert f == future;
-                ctx.close();
-            }
-        }); // (4)
-	}
+   	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+       	final ByteBuf time = ctx.alloc().buffer(4);  
+       	
+       	int currentTime = (int)(System.currentTimeMillis() / 1000L + 2208988800L);
+       	time.writeInt(currentTime); 
+       	LOG.info("print the time hex: " + ByteBufUtil.prettyHexDump(time));
+       	//将bytes中的4个字节分别写入到time，time1中
+       	ByteBuf part1 = time.slice(0, 2); //前2个字节
+       	ByteBuf part2 = time.slice(2, 2); //后2个字节
+       	LOG.info("print the part1 hex: " + ByteBufUtil.prettyHexDump(part1));
+       	LOG.info("print the part2 hex: " + ByteBufUtil.prettyHexDump(part2));
+       	
+       	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+       	
+       	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+        final ChannelFuture f = ctx.writeAndFlush(part1);  
+     	LOG.info("print refcount 2:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+     	final ChannelFuture f1 = ctx.writeAndFlush(part2);
+       	
+       	
+         
+           f.addListener(new ChannelFutureListener() {
+               @Override
+               public void operationComplete(ChannelFuture future) {
+               	assert f == future;
+               	ChannelFuture f1; 
+              
+               	f1.addListener(new ChannelFutureListener() {
+                       @Override
+                       public void operationComplete(ChannelFuture future) {
+                           assert f1 == future;
+                           ctx.close();
+                       }
+                   }); 
+               }
+           }); 
+   	}
+    
+//    @Override
+//	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+//    	final ByteBuf time = ctx.alloc().buffer(4);  
+//        time.writeInt((int) (System.currentTimeMillis() / 1000L + 2208988800L));
+//
+//        final ChannelFuture f = ctx.writeAndFlush(time);  
+//        f.addListener(new ChannelFutureListener() {
+//            @Override
+//            public void operationComplete(ChannelFuture future) {
+//                assert f == future;
+//                ctx.close();
+//            }
+//        });  
+//	}
 
 
 	@Override

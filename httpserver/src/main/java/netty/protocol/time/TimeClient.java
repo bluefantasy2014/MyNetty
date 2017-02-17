@@ -1,5 +1,7 @@
 package netty.protocol.time;
 
+import org.apache.log4j.PropertyConfigurator;
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -12,6 +14,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class TimeClient {
 	public static void main(String[] args) throws Exception {
+		PropertyConfigurator.configure("log4j.properties");
 		String host = args[0];
 		int port = Integer.parseInt(args[1]);
 		EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -24,7 +27,11 @@ public class TimeClient {
 			b.handler(new ChannelInitializer<SocketChannel>() {
 				@Override
 				public void initChannel(SocketChannel ch) throws Exception {
-					ch.pipeline().addLast(new TimeClientHandler());
+					//没考虑拆包问题的版本
+					//ch.pipeline().addLast(new TimeClientHandler());
+					
+					//考虑拆包的版本
+					ch.pipeline().addLast(new TimeClientHandler1());
 				}
 			});
 
