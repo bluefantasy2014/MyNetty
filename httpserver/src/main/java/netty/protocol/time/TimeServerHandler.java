@@ -25,21 +25,23 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
        	time.writeInt(currentTime); 
        	LOG.info("print the time hex: " + ByteBufUtil.prettyHexDump(time));
        	//将bytes中的4个字节分别写入到time，time1中
-       	ByteBuf part1 = time.slice(0, 2); //前2个字节
-       	ByteBuf part2 = time.slice(2, 2); //后2个字节
+       	ByteBuf part1 = time.copy(0,2);  //前2个字节
+       	ByteBuf part2 = time.copy(2,2); //后2个字节
+       	
+       	//本方法需要负责release
+       	time.release(); 
+       	
        	LOG.info("print the part1 hex: " + ByteBufUtil.prettyHexDump(part1));
        	LOG.info("print the part2 hex: " + ByteBufUtil.prettyHexDump(part2));
        	
-       	//如果注释掉这句话，就会报错，server将不能成功的给Client端发送数据。 
-       	time.retain(); part1.retain();  part2.retain(); 
-       	
-       	LOG.info("print refcount:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+       	LOG.debug("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
         final ChannelFuture f = ctx.writeAndFlush(part1);  
         LOG.info("sleep 2 second to wait for part1 to be wrote");
         
         Thread.sleep(2000);
-     	LOG.info("print refcount 1:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
+     	LOG.info("print refcount 2:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
      	final ChannelFuture f1 = ctx.writeAndFlush(part2);
+     	LOG.info("print refcount 3:" + time.refCnt() + "," + part1.refCnt() + "," + part2.refCnt());
        	
     	f1.addListener(new ChannelFutureListener() {
             @Override
