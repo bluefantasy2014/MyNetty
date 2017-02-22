@@ -11,6 +11,9 @@ import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
+/*
+ * 注意： 此类中有两个channelActive方法的实现，2中方法实现方式不一样。 主要为了做实验。 运行时可以选择任何一种方式。 
+ * */
 public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
 
 	private static final Logger LOG = Logger.getLogger(TimeServerHandler.class);
@@ -52,6 +55,9 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter  {
         }); 
    	}
     
+    /*
+     * 这种方式是最简单的方式。 
+     * */
 //    @Override
 //	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 //    	final ByteBuf time = ctx.alloc().buffer(4);  

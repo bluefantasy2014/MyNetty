@@ -2,26 +2,35 @@ package netty.protocol.time;
 
 import java.util.Date;
 
+import org.apache.log4j.Logger;
+
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
+import io.netty.buffer.ByteBufUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-
+/*
+ * 这个版本是有错误的版本，原因是channelRead方法中每次被调用的时候数据都是不一样的。正确的做法是需要将每次的数据都累积起来，等到长度>4的时候再进行处理。
+ * 而不是像本方法中的如果长度<4则直接扔掉数据。这是不对的。 
+ * 
+ * */
 public class TimeClientHandler2 extends ChannelInboundHandlerAdapter {
+	private static final Logger LOG = Logger.getLogger(TimeClientHandler2.class);
     @Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 		ByteBuf m = (ByteBuf) msg; // (1)
-		System.out.println("print the object of msg:" + msg);
+		LOG.debug("print the object of msg:" + msg);
+		LOG.debug("print the className of msg:" + m.getClass().getCanonicalName());
+		LOG.debug("print the content of msg:" + ByteBufUtil.prettyHexDump(m));
 		if (m.readableBytes() >= 4) {
 			try {
 				long currentTimeMillis = (m.readUnsignedInt() - 2208988800L) * 1000L;
-				System.out.println(new Date(currentTimeMillis));
+				LOG.debug(new Date(currentTimeMillis));
 				ctx.close();
 			} finally {
 				m.release();
 			}
 		} else {
-			System.out.println("Waiting for more bytes");
+			LOG.debug("Waiting for more bytes");
 		}
 	}
 
