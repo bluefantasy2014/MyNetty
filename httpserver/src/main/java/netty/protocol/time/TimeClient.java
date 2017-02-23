@@ -37,8 +37,12 @@ public class TimeClient {
 					//ch.pipeline().addLast(new TimeClientHandler2());
 					
 					//Version4 : 将Handler逻辑分成2部分，一个Handler用来解包，一个Handler用来处理业务逻辑。 
-					ch.pipeline().addLast(new TimeDecoder()); 
-					ch.pipeline().addLast(new TimeClientHandler()); 
+					//ch.pipeline().addLast(new TimeDecoder()); 
+					//ch.pipeline().addLast(new TimeClientHandler()); 
+					
+					//Version5 :  在Version4的基础上都改成使用Java POJO，而不是ByteBuf.  
+					ch.pipeline().addLast(new TimeDecoderPojo()); 
+					ch.pipeline().addLast(new TimeClientHandlerPojo()); 
 				}
 			});
 

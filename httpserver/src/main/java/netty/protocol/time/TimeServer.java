@@ -48,7 +48,14 @@ public class TimeServer {
                          p.addLast(sslCtx.newHandler(ch.alloc()));
                      }
                      //p.addLast(new LoggingHandler(LogLevel.INFO));
-                     p.addLast(new TimeServerHandler());
+                     
+                     //Version1 : 直接使用ByteBuf。 
+                     //p.addLast(new TimeServerHandler());
+                     
+                     //version2： 使用POJO. TimeEncoder和TimeEncoder1可以任选一个实现。   
+                     //p.addLast(new TimeEncoder()); 
+                     p.addLast(new TimeEncoder1());
+                     p.addLast(new TimeServerHandlerPojo());
                  }
              });
 
