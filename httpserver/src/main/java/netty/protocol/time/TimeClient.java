@@ -31,10 +31,10 @@ public class TimeClient {
 					//ch.pipeline().addLast(new TimeClientHandler());
 					
 					//考虑拆包的版本
-					//ch.pipeline().addLast(new TimeClientHandler1());
+					ch.pipeline().addLast(new TimeClientHandler1());
 					
 					//自己写的有问题的版本
-					ch.pipeline().addLast(new TimeClientHandler2());
+					//ch.pipeline().addLast(new TimeClientHandler2());
 				}
 			});
 
