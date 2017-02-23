@@ -27,14 +27,18 @@ public class TimeClient {
 			b.handler(new ChannelInitializer<SocketChannel>() {
 				@Override
 				public void initChannel(SocketChannel ch) throws Exception {
-					//没考虑拆包问题的版本
+					//Version1 : 没考虑拆包问题的版本
 					//ch.pipeline().addLast(new TimeClientHandler());
 					
-					//考虑拆包的版本
-					ch.pipeline().addLast(new TimeClientHandler1());
+					//Version2 : 考虑拆包的版本
+					//ch.pipeline().addLast(new TimeClientHandler1());
 					
-					//自己写的有问题的版本
+					//Version3 : 自己写的有问题的版本
 					//ch.pipeline().addLast(new TimeClientHandler2());
+					
+					//Version4 : 将Handler逻辑分成2部分，一个Handler用来解包，一个Handler用来处理业务逻辑。 
+					ch.pipeline().addLast(new TimeDecoder()); 
+					ch.pipeline().addLast(new TimeClientHandler()); 
 				}
 			});
 
