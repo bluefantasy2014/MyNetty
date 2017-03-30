@@ -20,6 +20,7 @@ public class TimeClientHandler1 extends ChannelInboundHandlerAdapter {
 	@Override
 	public void handlerAdded(ChannelHandlerContext ctx) {
 		buf = ctx.alloc().buffer(4); // (1)
+		int a = 100; 
 	}
 
 	@Override

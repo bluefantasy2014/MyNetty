@@ -21,9 +21,9 @@ public class MyByteBufUtil {
 	}
 	
 	public static void main(String[] args) {
-		printHex("史纪军".getBytes()); 
+		printHex("史".getBytes()); 
 		System.out.println(); 
-		printHex1("史纪军".getBytes()); 
+		printHex1("史".getBytes()); 
 	}
 	
 	public static void printDebugInfo(ByteBuf bf){

@@ -31,7 +31,7 @@ public class TimeClient {
 					//ch.pipeline().addLast(new TimeClientHandler());
 					
 					//Version2 : 考虑拆包的版本
-					//ch.pipeline().addLast(new TimeClientHandler1());
+					ch.pipeline().addLast(new TimeClientHandler1());
 					
 					//Version3 : 自己写的有问题的版本
 					//ch.pipeline().addLast(new TimeClientHandler2());
@@ -41,8 +41,8 @@ public class TimeClient {
 					//ch.pipeline().addLast(new TimeClientHandler()); 
 					
 					//Version5 :  在Version4的基础上都改成使用Java POJO，而不是ByteBuf.  
-					ch.pipeline().addLast(new TimeDecoderPojo()); 
-					ch.pipeline().addLast(new TimeClientHandlerPojo()); 
+//					ch.pipeline().addLast(new TimeDecoderPojo()); 
+//					ch.pipeline().addLast(new TimeClientHandlerPojo()); 
 				}
 			});
 
